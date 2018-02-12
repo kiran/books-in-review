@@ -7,3 +7,7 @@ gem 'sinatra'
 group :test do
   gem 'minitest'
 end
+
+group :development, :test do
+	gem 'dotenv-rails'
+end
