@@ -1,0 +1,34 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Your Year in Books</h1>
+    <p class="lead text-muted">A list of the books you read in the last year, with your reviews and some stats.</p>
+  </div>
+</section>
+
+
+
+<div class="album text-muted">
+  <div class="container">
+		<section class="filters">
+				<button type="button" class="btn btn-outline-info" id="faves">Faves</button>
+				<button type="button" class="btn btn-outline-info" id="nonfiction">Nonfiction</button>
+				<button type="button" class="btn btn-outline-info" id="literature">Literature</button>
+				<button type="button" class="btn btn-outline-info" id="science-fiction">Science Fiction</button>
+				<button type="button" class="btn btn-outline-info" id="fantasy">Fantasy</button>
+				<button type="button" class="btn btn-success" id="clear"> ✖ Clear all</button>
+		</section>
+
+		<p>Showing <span id="count"><%= @books.length %></span> out of <%= @total_length %>.</p>
+
+		<section class="row" id="books-list">
+		 <% @books.each do |book| %>
+		 	<%= erb :book_template,  {:locals => {book: book}} %>
+		 <% end %>
+		</section>
+
+		<% content_for :javascript do %>
+			<script src="/js/books_filter.js"></script>
+			<script src="/js/readmore.min.js"></script>
+		<% end %>
+	</div>
+</div>

@@ -1,7 +1,54 @@
 body {
   padding-top: 5rem;
 }
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.album {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+article.book .book-txt {
+  padding: 10px;
+  max-height: 12em;
+  overflow: hidden;
+}
+
+article.book .figure-caption {
+	font-size: 100%;
 }

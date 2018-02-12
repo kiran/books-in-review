@@ -1,0 +1,14 @@
+<article class="card book <%= book.tags.join(' ') %>">
+	<div class="thumb">
+		<figure class="figure">
+			<img src="https://covers.openlibrary.org/b/isbn/<%= book.isbn %>-M.jpg" class="figure-img img-fluid rounded" alt="<%= book.title %>">
+			<figcaption class="figure-caption"><a href="https://www.goodreads.com/book/isbn/<%= book.isbn %>"><%= book.title %></a> by <%= book.author %></figcaption>
+		</figure>
+	</div>
+	<div class="book-review">
+		<p>
+			<% book.rating.times do %>★<% end %>
+		</p>
+		<p class="card-text book-txt"><%= book.review %></p>
+	</div>
+</article>
