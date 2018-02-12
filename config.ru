@@ -1,3 +1,3 @@
-require_relative './app/app'
+require_relative './routes/app'
 
-run Sinatra::Application
+run BooksInReview
